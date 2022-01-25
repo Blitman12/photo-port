@@ -3,6 +3,7 @@ import Nav from './components/nav'
 import Gallery from './components/gallery'
 import './index.css'
 import {useState} from 'react'
+import ContactForm from './components/contact'
 
 function App() {
   const [categories] = useState([
@@ -26,6 +27,7 @@ function App() {
       >
       </Nav>
       <main>
+        <ContactForm></ContactForm>
         <Gallery currentCategory={currentCategory}></Gallery>
         <About></About>
       </main>
